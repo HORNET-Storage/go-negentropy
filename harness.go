@@ -1,12 +1,12 @@
-package main
+package negentropy
 
 import (
-	"strings"
 	"bufio"
+	"encoding/hex"
 	"fmt"
 	"os"
 	"strconv"
-	"encoding/hex"
+	"strings"
 )
 
 func split(s string, delim rune) []string {
@@ -15,7 +15,7 @@ func split(s string, delim rune) []string {
 	})
 }
 
-func main() {
+func test() {
 	frameSizeLimit := uint64(0)
 	if env, exists := os.LookupEnv("FRAMESIZELIMIT"); exists {
 		var err error
