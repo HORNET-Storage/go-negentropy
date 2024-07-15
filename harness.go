@@ -80,7 +80,7 @@ func test() {
 				q = s
 			}
 
-			if (*ne).isInitiator {
+			if (*ne).IsInitiator {
 				var have, need []string
 				resp, err := ne.ReconcileWithIDs(q, &have, &need)
 				if err != nil {
